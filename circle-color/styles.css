@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#container {
+    position: relative;
+    width: 300px;  /* Increased size of container */
+    height: 300px; /* Increased size of container */
+}
+
+#colorFan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;  /* Increased size of color fan */
+    height: 300px; /* Increased size of color fan */
+    border-radius: 50%;
+    background: conic-gradient(
+        #ff0000 0% 10%,   /* Red */
+        #ff7f00 10% 20%,  /* Orange */
+        #ffff00 20% 30%,  /* Yellow */
+        #7fff00 30% 40%,  /* Lime */
+        #00ff00 40% 50%,  /* Green */
+        #00ff7f 50% 60%,  /* Spring Green */
+        #00ffff 60% 70%,  /* Cyan */
+        #007fff 70% 80%,  /* Azure */
+        #0000ff 80% 90%,  /* Blue */
+        #7f00ff 90% 100%  /* Violet */
+    );
+    transform: translate(-50%, -50%) scale(0); /* Center and collapse */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1; /* Ensure it is behind the circle */
+}
+
+#circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 4px rgb(0, 0, 0);
+    cursor: pointer;
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: 2; /* Ensure it is above the colorFan */
+}

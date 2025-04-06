@@ -1,0 +1,64 @@
+body {
+	background-color: orange;
+	margin: 0;
+}
+
+.block {
+	background-color: yellow;
+	width: 100px;
+	height: 100vh;
+}
+
+.block2 {
+	background-color: red;
+	width: 200px;
+	height: 100vh;
+	position: absolute;;
+	right: 0;
+	top: 0;
+}
+
+.header {
+	background-color: yellow;
+	width: 100vw;
+	height: 100px;
+}
+
+.footer {
+	background-color: red;
+	width: 100vw;
+	height: 100px;
+}
+
+.eye {
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+  overflow: hidden;
+}
+
+.pupil {
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -15%;
+	margin-top: -10%;
+}
+
+.eye1 {
+	margin-left: -225px;
+}
+
+.eye2 {
+	margin-left: 25px;
+}
